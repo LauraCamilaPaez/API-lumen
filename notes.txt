@@ -1,0 +1,33 @@
+    //Migraciones
+
+1 Para la creación de migraciones en Laravel podremos usar el comando
+
+  ** php artisan make:migration CreateNombredelatablaTable --create=nombredelatablaenminuscula
+
+Recordar que para el nombre de las tablas se usa el plural en las migraciones y ne minuscula. //authors
+Para el modelo el nombre lleva la primera en mayuscula y en singular // Author
+
+2. Para la creacion de las columnas en el caso del id, laravel asume que es un PK y autoincrements
+
+3. Para realizar la migración a la base de datos ejecutamos el comando
+
+   ** php artisan migrate
+   y para actualizar algo de la migración
+   ** php artisan migrate:fresh
+
+    //Modelos
+
+1. Creación del modelo
+
+ ** $fillable, nos indica cuales son los atributos que pueden ser asignados de manera masiva.
+
+    //Factory
+Un factory nos va permitir crear instancias de un modelo especifico en este caso, Author, que nos generara nombres, generos
+o lo que se requiera.
+    ~ database/factories/modelfactory.php (modelo de muestra)
+
+1.
+
+    //Seeders
+
+    ~ database/seeders/DatabaseSeeders.php
