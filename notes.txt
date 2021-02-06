@@ -1,4 +1,4 @@
-    //Migraciones
+ph    //Migraciones
 
 1 Para la creación de migraciones en Laravel podremos usar el comando
 
