@@ -23,7 +23,7 @@ trait ApiResponser{
     * @return Illuminate\Http\JsonResponse
 
     * */
-    public function errorResponse(){
+    public function errorResponse($message, $code = response::HTTP_UNPROCESSABLE_ENTITY){
         return response()->json(['error' => $message, 'code' => $code], $code);
 
     }
